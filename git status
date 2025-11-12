@@ -1,0 +1,394 @@
+[33mcommit f00a6415afb2242ae7b6ce4562405cb65c8949cb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: sekharkantagni <chandrasekhar9408@gmail.com>
+Date:   Wed Nov 12 19:22:35 2025 +0530
+
+    First commit
+
+[1mdiff --git a/.classpath b/.classpath[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f7e4a1d[m
+[1m--- /dev/null[m
+[1m+++ b/.classpath[m
+[36m@@ -0,0 +1,40 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<classpath>[m
+[32m+[m	[32m<classpathentry kind="src" output="target/classes" path="src/main/java">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="src" output="target/test-classes" path="src/test/java">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m			[32m<attribute name="test" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m			[32m<attribute name="test" value="true"/>[m
+[32m+[m			[32m<attribute name="optional" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">[m
+[32m+[m		[32m<attributes>[m
+[32m+[m			[32m<attribute name="maven.pomderived" value="true"/>[m
+[32m+[m		[32m</attributes>[m
+[32m+[m	[32m</classpathentry>[m
+[32m+[m	[32m<classpathentry kind="output" path="target/classes"/>[m
+[32m+[m[32m</classpath>[m
+[1mdiff --git a/.project b/.project[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f4f3f39[m
+[1m--- /dev/null[m
+[1m+++ b/.project[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<projectDescription>[m
+[32m+[m	[32m<name>BDDCucumberProject</name>[m
+[32m+[m	[32m<comment></comment>[m
+[32m+[m	[32m<projects>[m
+[32m+[m	[32m</projects>[m
+[32m+[m	[32m<buildSpec>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.jdt.core.javabuilder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m		[32m<buildCommand>[m
+[32m+[m			[32m<name>org.eclipse.m2e.core.maven2Builder</name>[m
+[32m+[m			[32m<arguments>[m
+[32m+[m			[32m</arguments>[m
+[32m+[m		[32m</buildCommand>[m
+[32m+[m	[32m</buildSpec>[m
+[32m+[m	[32m<natures>[m
+[32m+[m		[32m<nature>org.eclipse.jdt.core.javanature</nature>[m
+[32m+[m		[32m<nature>org.eclipse.m2e.core.maven2Nature</nature>[m
+[32m+[m	[32m</natures>[m
+[32m+[m[32m</projectDescription>[m
+[1mdiff --git a/.settings/org.eclipse.jdt.core.prefs b/.settings/org.eclipse.jdt.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2f5cc74[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.jdt.core.prefs[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.compliance=1.8[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.forbiddenReference=warning[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.problem.reportPreviewFeatures=ignore[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.release=disabled[m
+[32m+[m[32morg.eclipse.jdt.core.compiler.source=1.8[m
+[1mdiff --git a/.settings/org.eclipse.m2e.core.prefs b/.settings/org.eclipse.m2e.core.prefs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f897a7f[m
+[1m--- /dev/null[m
+[1m+++ b/.settings/org.eclipse.m2e.core.prefs[m
+[36m@@ -0,0 +1,4 @@[m
+[32m+[m[32mactiveProfiles=[m
+[32m+[m[32meclipse.preferences.version=1[m
+[32m+[m[32mresolveWorkspaceProjects=true[m
+[32m+[m[32mversion=1[m
+[1mdiff --git a/pom.xml b/pom.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8647fb1[m
+[1m--- /dev/null[m
+[1m+++ b/pom.xml[m
+[36m@@ -0,0 +1,41 @@[m
+[32m+[m[32m<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">[m
+[32m+[m[32m  <modelVersion>4.0.0</modelVersion>[m
+[32m+[m[32m  <groupId>com.orangehrm</groupId>[m
+[32m+[m[32m  <artifactId>BDDCucumberProject</artifactId>[m
+[32m+[m[32m  <version>0.0.1-SNAPSHOT</version>[m
+[32m+[m[41m  [m
+[32m+[m[32m  <dependencies>[m
+[32m+[m[41m	[m
+[32m+[m		[32m<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->[m
+[32m+[m[32m<dependency>[m
+[32m+[m[32m    <groupId>io.cucumber</groupId>[m
+[32m+[m[32m    <artifactId>cucumber-java</artifactId>[m
+[32m+[m[32m    <version>7.21.1</version>[m
+[32m+[m[32m</dependency>[m
+[32m+[m
+[32m+[m[32m<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->[m
+[32m+[m[32m<dependency>[m
+[32m+[m[32m    <groupId>io.cucumber</groupId>[m
+[32m+[m[32m    <artifactId>cucumber-junit</artifactId>[m
+[32m+[m[32m    <version>7.21.1</version>[m
+[32m+[m[32m    <scope>test</scope>[m
+[32m+[m[32m</dependency>[m
+[32m+[m
+[32m+[m[32m<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->[m
+[32m+[m[32m<dependency>[m
+[32m+[m[32m    <groupId>org.seleniumhq.selenium</groupId>[m
+[32m+[m[32m    <artifactId>selenium-java</artifactId>[m
+[32m+[m[32m    <version>4.27.0</version>[m
+[32m+[m[32m</dependency>[m
+[32m+[m[41m	[m
+[32m+[m	[32m<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->[m
+[32m+[m[32m<dependency>[m
+[32m+[m[32m    <groupId>tech.grasshopper</groupId>[m
+[32m+[m[32m    <artifactId>extentreports-cucumber7-adapter</artifactId>[m
+[32m+[m[32m    <version>1.10.1</version>[m
+[32m+[m[32m</dependency>[m
+[32m+[m
+[32m+[m
+[32m+[m[41m	[m
+[32m+[m[32m </dependencies>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/java/com/orangehrm/base/BaseTest.java b/src/main/java/com/orangehrm/base/BaseTest.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8122e63[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/com/orangehrm/base/BaseTest.java[m
+[36m@@ -0,0 +1,66 @@[m
+[32m+[m[32mpackage com.orangehrm.base;[m
+[32m+[m
+[32m+[m[32mimport org.openqa.selenium.WebDriver;[m
+[32m+[m[32mimport org.openqa.selenium.chrome.ChromeDriver;[m
+[32m+[m[32mimport org.openqa.selenium.edge.EdgeDriver;[m
+[32m+[m[32mimport org.openqa.selenium.firefox.FirefoxDriver;[m
+[32m+[m
+[32m+[m[32mimport com.orangehrm.exceptions.InvalidBrowserException;[m
+[32m+[m[32mimport com.orangehrm.utils.CommonUtilities;[m
+[32m+[m
+[32m+[m[32mpublic class BaseTest {[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic static WebDriver driver;[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic static CommonUtilities common=new CommonUtilities();[m
+[32m+[m	[32mpublic static void launchApplication() {[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m		[32mdriver=BaseTest.getDriver();[m
+[32m+[m		[32mdriver.get(common.getProperty("url"));[m
+[32m+[m		[32mdriver.manage().window().maximize();[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m[41m		[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic static WebDriver getDriver() {[m
+[32m+[m[41m		[m
+[32m+[m		[32mif(driver==null) {[m
+[32m+[m[41m			[m
+[32m+[m			[32mString browserName=common.getProperty("browser");[m
+[32m+[m[41m			[m
+[32m+[m			[32mswitch (browserName) {[m
+[32m+[m[41m			[m
+[32m+[m			[32mcase "chrome":[m
+[32m+[m				[32mdriver=new ChromeDriver();[m
+[32m+[m[41m				[m
+[32m+[m				[32mbreak;[m
+[32m+[m			[32mcase "edge":[m
+[32m+[m				[32mdriver=new EdgeDriver();[m
+[32m+[m				[32mbreak;[m
+[32m+[m			[32mcase "Firefox":[m
+[32m+[m[41m				[m
+[32m+[m				[32mdriver=new FirefoxDriver();[m
+[32m+[m				[32mbreak;[m
+[32m+[m[41m				[m
+[32m+[m
+[32m+[m			[32mdefault:[m
+[32m+[m[41m				[m
+[32m+[m				[32mtry {[m
+[32m+[m					[32mthrow new InvalidBrowserException();[m
+[32m+[m				[32m} catch (InvalidBrowserException e) {[m
+[32m+[m					[32mSystem.out.println(e.getMessage());[m
+[32m+[m				[32m}[m
+[32m+[m
+[32m+[m[41m				[m
+[32m+[m				[32mbreak;[m
+[32m+[m[41m				[m
+[32m+[m			[32m}[m
+[32m+[m		[32m}[m
+[32m+[m[41m		[m
+[32m+[m		[32mreturn driver;[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/main/java/com/orangehrm/exceptions/InvalidBrowserException.java b/src/main/java/com/orangehrm/exceptions/InvalidBrowserException.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..feb5a77[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/com/orangehrm/exceptions/InvalidBrowserException.java[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32mpackage com.orangehrm.exceptions;[m
+[32m+[m
+[32m+[m[32mpublic class InvalidBrowserException extends RuntimeException{[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic InvalidBrowserException() {[m
+[32m+[m[41m		[m
+[32m+[m		[32msuper("Invalid browser choosen ..make sure use chrome . firfox /edge ..");[m
+[32m+[m	[32m}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/java/com/orangehrm/utils/CommonUtilities.java b/src/main/java/com/orangehrm/utils/CommonUtilities.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c021736[m
+[1m--- /dev/null[m
+[1m+++ b/src/main/java/com/orangehrm/utils/CommonUtilities.java[m
+[36m@@ -0,0 +1,34 @@[m
+[32m+[m[32mpackage com.orangehrm.utils;[m
+[32m+[m
+[32m+[m[32mimport java.io.FileInputStream;[m
+[32m+[m[32mimport java.io.FileNotFoundException;[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.Properties;[m
+[32m+[m
+[32m+[m[32mpublic class CommonUtilities {[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic String getProperty(String key) {[m
+[32m+[m[41m		[m
+[32m+[m		[32mFileInputStream fis1=null;[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mfis1=new FileInputStream("src\\test\\resources\\properties\\Application.properties");[m
+[32m+[m		[32m} catch (FileNotFoundException e) {[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m[41m		[m
+[32m+[m		[32mProperties prop= new Properties();[m
+[32m+[m[41m		[m
+[32m+[m		[32mtry {[m
+[32m+[m			[32mprop.load(fis1);[m
+[32m+[m		[32m} catch (IOException e) {[m
+[32m+[m			[32m// TODO Auto-generated catch block[m
+[32m+[m			[32me.printStackTrace();[m
+[32m+[m		[32m}[m
+[32m+[m[41m		[m
+[32m+[m		[32mString value=prop.getProperty(key);[m
+[32m+[m[41m		[m
+[32m+[m		[32mreturn value;[m
+[32m+[m[41m		[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/src/test/java/com/orangehrm/pages/BasePage.java b/src/test/java/com/orangehrm/pages/BasePage.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fd8d1a8[m
+[1m--- /dev/null[m
+[1m+++ b/src/test/java/com/orangehrm/pages/BasePage.java[m
+[36m@@ -0,0 +1,73 @@[m
+[32m+[m[32mpackage com.orangehrm.pages;[m
+[32m+[m
+[32m+[m[32mimport java.time.Duration;[m
+[32m+[m[32mimport java.util.HashMap;[m
+[32m+[m
+[32m+[m[32mimport org.junit.Assert;[m
+[32m+[m[32mimport org.openqa.selenium.By;[m
+[32m+[m[32mimport org.openqa.selenium.WebDriver;[m
+[32m+[m[32mimport org.openqa.selenium.WebElement;[m
+[32m+[m[32mimport org.openqa.selenium.support.ui.ExpectedConditions;[m
+[32m+[m[32mimport org.openqa.selenium.support.ui.WebDriverWait;[m
+[32m+[m
+[32m+[m[32mimport com.orangehrm.base.BaseTest;[m
+[32m+[m
+[32m+[m[32mpublic class BasePage extends BaseTest {[m
+[32m+[m[41m	[m
+[32m+[m	[32mWebDriver driver;[m
+[32m+[m[41m	[m
+[32m+[m	[32mHashMap<String, By> objectRepo=new HashMap<String, By>();[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic BasePage(WebDriver driver) {[m
+[32m+[m[41m		[m
+[32m+[m		[32mthis.driver=driver;[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m	[32m public void addObject(String logicalName, By by) {[m
+[32m+[m[41m		 [m
+[32m+[m		[32m objectRepo.put(logicalName, by);[m
+[32m+[m[41m		 [m
+[32m+[m[41m		 [m
+[32m+[m[41m		 [m
+[32m+[m	[32m }[m
+[32m+[m[41m	 [m
+[32m+[m	[32m public void type(String logicalName, String text) {[m
+[32m+[m[41m		 [m
+[32m+[m		[32m// driver.findElement(By.xpath("")).sendKeys(null);[m
+[32m+[m[41m		 [m
+[32m+[m		[32m getElement(logicalName).sendKeys(text);[m
+[32m+[m	[32m }[m
+[32m+[m[41m	 [m
+[32m+[m	[32m public void click(String logicalName)[m
+[32m+[m		[32m{[m
+[32m+[m			[32mgetElement(logicalName).click();[m
+[32m+[m		[32m}[m
+[32m+[m
+[32m+[m	[32m private WebElement getElement(String logicalName) {[m
+[32m+[m[41m		[m
+[32m+[m		[32m By by=objectRepo.get(logicalName);[m
+[32m+[m[41m		 [m
+[32m+[m		[32m waitForElementPresence(by);[m
+[32m+[m		[32m WebElement element=driver.findElement(by);[m
+[32m+[m				[32m return element;[m
+[32m+[m[41m		 [m
+[32m+[m[41m		[m
+[32m+[m	[32m }[m
+[32m+[m[41m	 [m
+[32m+[m[41m	 [m
+[32m+[m
+[32m+[m	[32m private void waitForElementPresence(By by) {[m
+[32m+[m		[32m WebDriverWait myWait=new WebDriverWait(driver, Duration.ofSeconds(Long.parseLong((common.getProperty("explicitWait")))));[m
+[32m+[m		[32m myWait.until(ExpectedConditions.presenceOfElementLocated(by));[m
+[32m+[m[41m		[m
+[32m+[m	[32m }[m
+[32m+[m[41m	[m
+[32m+[m	[32m public void validateTitle(String expTitle)[m
+[32m+[m		[32m{[m
+[32m+[m[41m			[m
+[32m+[m		[32m String actualTitle = driver.getTitle();[m
+[32m+[m		[32m    System.out.println("Expected Title: " + expTitle);[m
+[32m+[m		[32m    System.out.println("Actual Title: " + actualTitle);[m
+[32m+[m		[32m    Assert.assertTrue("Title did not match. Actual: " + actualTitle, actualTitle.equalsIgnoreCase(expTitle));		}[m
+[32m+[m[41m	[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/src/test/java/com/orangehrm/pages/DashboardPage.java b/src/test/java/com/orangehrm/pages/DashboardPage.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a2d97e0[m
+[1m--- /dev/null[m
+[1m+++ b/src/test/java/com/orangehrm/pages/DashboardPage.java[m
+[36m@@ -0,0 +1,17 @@[m
+[32m+[m[32mpackage com.orangehrm.pages;[m
+[32m+[m
+[32m+[m[32mimport org.openqa.selenium.WebDriver;[m
+[32m+[m
+[32m+[m[32mimport com.orangehrm.base.BaseTest;[m
+[32m+[m
+[32m+[m[32mpublic class DashboardPage extends BasePage{[m
+[32m+[m[41m	[m
+[32m+[m	[32mstatic WebDriver driver;[m
+[32m+[m[41m	[m
+[32m+[m	[32mpublic DashboardPage() {[m
+[32m+[m		[32msuper(driver=BaseTest.getDriver());[m
+[32m+[m[41m		[m
+[32m+[m	[32m}[m
+[32m+[m[41m	[m
+[32m+[m[41m	[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/src/test/java/com/orangehrm/pages/LoginPage.java b/src/test/java/com/orangehrm/pages/LoginPage.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..74bc11d[m
+[1m--- /dev/null[m
+[1m+++ b/src/test/java/com/orangehrm/pages/LoginPage.java[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32mpackage com.orangehrm.pages;[m
+[32m+[m
+[32m+[m[32mimport org.open
